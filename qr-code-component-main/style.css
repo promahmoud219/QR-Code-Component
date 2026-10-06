@@ -1,0 +1,81 @@
+:root {
+    /* Colors */
+    --color-slate-900: #1F3F5F;
+    --color-slate-500: #687D8D;
+    --color-slate-300: #D5E1EF;
+    --color-white: #FFFFFF;
+
+    /* Spacing */
+    --space-500: 40px;
+    --space-300: 24px;
+    --space-200: 16px;
+
+    /* Typography */
+    --font-family: "Outfit", sans-serif;
+
+    --text-1-size: 22px;
+    --text-1-line-height: 120%;
+    --text-1-letter-spacing: 0px;
+    --text-1-weight: 700;
+
+    --text-2-size: 15px;
+    --text-2-line-height: 140%;
+    --text-2-letter-spacing: 0.2px;
+    --text-2-weight: 400;
+}
+
+*{
+    background: var(--color-slate-300);
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container *{
+    background: transparent;
+    font-family: var(--font-family);
+}
+
+#container{
+    height: 499px;
+    width: 320px;
+    text-align: center;
+    padding: var(--space-200);
+    background-color: var(--color-white);
+    border-radius: 20px; 
+} 
+
+#description {
+    padding: var(--space-200);
+}
+
+#container h3{
+    color: var(--color-slate-900);
+    size: var(--text-1-size);
+    line-height: var(--text-1-line-height);
+    font-weight: var(--text-1-weight);
+    letter-spacing: var(--text-1-letter-spacing);    
+}
+
+#container p{
+    color: var(--color-slate-500);
+    size: var(--text-2-size);
+    line-height: var(--text-2-line-height);
+    font-weight: var(--text-2-weight);
+    letter-spacing: var(--text-2-letter-spacing);    
+}
+
+#qr-code-img-container {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
